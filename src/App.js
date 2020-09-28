@@ -8,8 +8,10 @@ import {
 } from "@ant-design/icons";
 import { Button } from "antd";
 import styled from "styled-components";
+import moment from 'moment';
+// import lucas from "./lucas.png";
+import image from './assets/will.png'
 
-import lucas from "./lucas.png";
 
 const IconContainer = styled.div`
   display: flex;
@@ -29,8 +31,8 @@ const App = () => {
     <div className="App">
       <h1>Lucas Seck</h1>
       <header className="App-header">
-        <Image src={lucas} className="App-logo" alt="logo" />
-        <p>Yoo Leute. Meine Page!</p>
+        <Image src={image} className="App-logo" alt="logo" />
+          <p>Meine Page ist nice! <br /> Momentan ist es: {moment().format('YYYY.MM.DD HH:mm:ss')}</p>
         <IconContainer>
           <Button
             type="circle"
